@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -44,7 +45,7 @@ const Recommended = () => {
             className="mySwiper"
         >
             {
-                books.length > 0 && books.slice(8,18).map((book,index) => (
+                books.length > 0 && books.slice(3,16).map((book,index) => (
                     <SwiperSlide key={index}>
                         <BookCard book={book}/>
                     </SwiperSlide>       
